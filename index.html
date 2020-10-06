@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/leaselabs_logo_fullstack_rgb_icon.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/container.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="LeaseLabs - Full Stack Marketing" content="Technical Exam - Danielle Bryan P. Dizon" />
+    <title>LeaseLabs - Full Stack Marketing</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div id="nav-bar">
+            <div id="nav-image">
+                <a href="#"><img src="./img/leaselabs_logo_fullstack_rgb.png" /></a>
+            </div>
+            <div id="nav-control" onClick="topNavControl()">
+                <i class="fa fa-chevron-down" id="down" aria-hidden="true"></i>
+                <i class="fa fa-chevron-up" id="up" aria-hidden="true"></i>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li>
+                        <p><a href="#">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">Our work</a>
+                    </li>
+                    <li>
+                        <p><a href="#">About us</a>
+                    </li>
+                    <li>
+                        <p><a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <p><a href="#">Specials</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="body-container">
+            <div id="side-nav-bar">
+                <div id="side-nav-control" onClick="sideNavControl()">
+                    <i class="fa fa-chevron-right" id="right" aria-hidden="true"></i>
+                    <i class="fa fa-chevron-left" id="left" aria-hidden="true"></i>
+                </div>
+                <div id="side-nav-links">
+                    <div>
+                        <div id="side-nav-bar-headers">
+                            <p>Subnav</p>
+                            <div id="triangle"></div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="side-nav-bar-headers">
+                            <p>Related Links</p>
+                            <div id="triangle"></div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="body-content">
+                <div id="body-content-header">
+                    <div id="initial-header">
+                        heading 1
+                    </div>
+                    <div id="secondary-header">
+                        heading 2
+                    </div>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus interdum rhoncus. Curabitur
+                    dictum est sit amet turpis auctor
+                    facilisis. Phasellus nec suscipit mi. In eget egestas risus. Aliquam erat volutpat. Duis euismod
+                    scelerisque orci, nec imperdiet lacus laoreet ac.
+                    Integer auctor massa tristique neque tincidunt blandit vel in augue.
+                </div>
+                <div>
+                    Morbi vel diam vel arcu tincidunt rhoncus eget id mi. Vivamus sit amet semper nunc. Sed eget massa
+                    nec nulla lobortis vulputate sed id felis.
+                    Aenean finibus mattis lorem, eget laoreet orci ornare quis. Praesent ac mattis purus, ut porttitor
+                    tortor. Cras et condimentum velit.
+                </div>
+                <div>
+                    Donec viverra sem eu sapien feugiat accumsan. Vivamus ullamcorper augue tempor sem dapibus pulvinar.
+                    Pellentesque ac nunc euismod,
+                    lobortis eros vitae, bibendum ex. Aliquam vitae justo turpis. Praesent ex orci, ullamcorper et eros
+                    in, euismod gravida tellus. Nullam sed
+                    sapien dictum, eleifend mauris et, placerat odio. Aliquam quis sapien nisl.
+                </div>
+                <div id="body-content-images">
+                </div>
+                <div id="body-footer">
+
+                </div>
+            </div>   
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="images.js" type="text/javascript"></script>
+    <script src="controls.js" type="text/javascript"></script>
+    <script>
+        const mediaReset = window.matchMedia("(max-width: 1201px)");
+
+        if(mediaReset.matches) {
+            document.getElementById('left').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
